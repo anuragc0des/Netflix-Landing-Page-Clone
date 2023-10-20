@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Manrope:wght@600&family=Open+Sans:wght@400;600;700;800&family=Outfit:wght@300&family=Poppins:wght@400;500;600&family=Roboto+Mono:wght@500&display=swap");
+
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Manrope:wght@600&family=Open+Sans:wght@400;600;700;800&family=Outfit:wght@300&family=Poppins:wght@400;500;600&family=Roboto+Mono:wght@500&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+header {
+  z-index: 33;
+  position: absolute;
+  display: flex;
+  padding: 20px 150px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  position: relative;
+  height: 3rem;
+}
+
+header .menu {
+  display: flex;
+  gap: 20px;
+  font-size: 1rem;
+}
+
+.menu select {
+  border: 1px solid #fff;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  background: transparent;
+  font-weight: 600;
+}
+
+header .menu a {
+  background: #e50914;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 24px;
+  border-radius: 6px;
+}
