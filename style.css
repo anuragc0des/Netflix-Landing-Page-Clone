@@ -10,7 +10,7 @@
 }
 
 header {
-  z-index: 33;
+  z-index: 33333;
   position: absolute;
   display: flex;
   padding: 20px 150px;
@@ -35,8 +35,10 @@ header .menu {
   width: 100px;
   height: 30px;
   text-align: center;
-  background: transparent;
+  filter: opacity(70%);
   font-weight: 600;
+  color: #fff;
+  background: black;
 }
 
 header .menu a {
@@ -46,4 +48,190 @@ header .menu a {
   font-weight: 600;
   padding: 8px 24px;
   border-radius: 6px;
+}
+
+.home-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 222;
+  background: url(./images/bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-page .contents {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.contents .text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text h1 {
+  font-weight: 800;
+  font-size: 2.6rem;
+  color: #fff;
+}
+
+.text p {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.contents .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.input-box input {
+  width: 400px;
+  height: 100%;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  filter: opacity(70%);
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.input-box input::placeholder {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.input-box button {
+  width: 150px;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #e50914;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.home-page .overlay {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0000007d;
+}
+
+.feature-one {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  padding: 20px 150px;
+  background: #000000;
+  border-top: 8px solid #2d2d2d;
+}
+
+.feature-one .features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.features .texts {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.features .texts h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.features .texts p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.features .imgbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 70vh;
+}
+
+.features .imgbox img {
+  position: absolute;
+  height: 75%;
+}
+
+.feature-two {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  padding: 20px 150px;
+  background: #000000;
+  border-top: 8px solid #2d2d2d;
+}
+
+.feature-two .features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.feature-two .features .texts {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.feature-three {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  padding: 20px 150px;
+  background: #000000;
+  border-top: 8px solid #2d2d2d;
+}
+
+.feature-three .features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.feature-four {
+  position: relative;
+  width: 100% auto;
+  height: 75vh;
+  padding: 20px 150px;
+  background: #000000;
+  border-top: 8px solid #2d2d2d;
+}
+
+.feature-four .features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 }
