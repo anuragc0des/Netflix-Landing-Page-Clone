@@ -59,6 +59,7 @@ header .menu a {
   background: url(./images/bg.jpg) no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 0px 100px;
 }
 
 .home-page .contents {
@@ -89,7 +90,6 @@ header .menu a {
 .contents .input-box {
   position: relative;
   width: 100%;
-  height: 50px;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -97,8 +97,7 @@ header .menu a {
 
 .input-box input {
   width: 400px;
-  height: 100%;
-  padding: 20px;
+  padding: 16px;
   border: 1px solid #fff;
   border-radius: 6px;
   filter: opacity(70%);
@@ -113,15 +112,14 @@ header .menu a {
 }
 
 .input-box button {
-  width: 200px;
-  letter-spacing: 1px;
-  font-size: 1rem;
-  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 6px;
   background: #e50914;
   border: none;
   outline: none;
-  border-radius: 6px;
   color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .home-page .overlay {
@@ -144,7 +142,7 @@ header .menu a {
 
 .feature-one .features {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   gap: 20px;
 }
@@ -195,7 +193,7 @@ header .menu a {
 
 .feature-two .features {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   gap: 20px;
 }
@@ -221,7 +219,7 @@ header .menu a {
 
 .feature-three .features {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   gap: 20px;
 }
@@ -239,7 +237,7 @@ header .menu a {
 
 .feature-four .features {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   gap: 30px;
 }
@@ -318,7 +316,6 @@ header .menu a {
 .questions .input-box {
   position: relative;
   width: 100%;
-  height: 50px;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -371,4 +368,155 @@ footer .container .quick-links ul li a {
 
 footer .container .phone a {
   color: #fff;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 20px 80px;
+  }
+
+  header .logo img {
+    height: 1.8rem;
+  }
+
+  header .menu a {
+    display: inline-block;
+    padding: 6px 20px;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+  }
+
+  .home-page {
+    min-height: 80vh;
+    padding: 0px 100px;
+  }
+
+  .contents .text {
+    width: auto;
+  }
+
+  .contents .input-box {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .home-page .overlay {
+    min-height: 80vh;
+  }
+
+  .feature-one,
+  .feature-two,
+  .feature-three,
+  .feature-four,
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    padding: 30px 90px;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .features .imgbox img {
+    height: 100%;
+  }
+
+  .features .texts h1 {
+    font-size: 1.6rem;
+  }
+
+  .features .texts {
+    max-width: 312px;
+  }
+
+  .questions .input-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-box input {
+    width: 100%;
+  }
+
+  .questions .heading {
+    font-size: 2rem;
+  }
+
+  footer .container .quick-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 665px) {
+  header {
+    padding: 20px 50px;
+  }
+
+  .home-page {
+    min-height: 90vh;
+    padding: 0px 50px;
+  }
+
+  header .logo img {
+    height: 1.4rem;
+  }
+
+  header .menu a {
+    display: inline-block;
+    padding: 5px 18px;
+  }
+
+  .home-page .overlay {
+    min-height: 90vh;
+  }
+
+  .features .texts {
+    max-width: 312px;
+  }
+
+  .features .texts p {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .feature-one,
+  .feature-two,
+  .feature-three,
+  .feature-four,
+  .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 84vh;
+    padding: 10px 50px;
+  }
+
+  .features .imgbox img {
+    height: 90%;
+  }
+
+  .features .imgbox {
+    height: 250px;
+  }
+
+  .questions {
+    padding: 30px 50px;
+  }
+
+  footer {
+    padding: 30px 50px;
+    height: 90vh;
+  }
 }
