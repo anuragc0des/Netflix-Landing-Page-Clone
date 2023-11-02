@@ -13,11 +13,3 @@ for (let i = 0; i < openBtn.length; i++) {
   });
 }
 
-for (let j = 0; j < closeBtn.length; j++) {
-  closeBtn[j].addEventListener("click", function () {
-    closeBtn[j].classList.toggle("close");
-    plus[j].classList.toggle("hidden");
-    cross[j].classList.toggle("hidden");
-    para[j].classList.toggle("hidden");
-  });
-}
